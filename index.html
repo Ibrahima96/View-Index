@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculatrice</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <div class="bg-white p-6 rounded-2xl shadow-lg w-80">
+    <section id="section" class="text-right text-2xl font-mono h-12 mb-4 border-b-2 pb-2"></section>
+
+    <div class="grid grid-cols-4 gap-2">
+      <!-- Row 1 -->
+      <button class="btn btn-secondary" data-value="7">7</button>
+      <button class="btn btn-secondary" data-value="8">8</button>
+      <button class="btn btn-secondary" data-value="9">9</button>
+      <button class="btn btn-accent" data-value="/">/</button>
+
+      <!-- Row 2 -->
+      <button class="btn btn-secondary" data-value="4">4</button>
+      <button class="btn btn-secondary" data-value="5">5</button>
+      <button class="btn btn-secondary" data-value="6">6</button>
+      <button class="btn btn-accent" data-value="*">*</button>
+
+      <!-- Row 3 -->
+      <button class="btn btn-secondary" data-value="1">1</button>
+      <button class="btn btn-secondary" data-value="2">2</button>
+      <button class="btn btn-secondary" data-value="3">3</button>
+      <button class="btn btn-accent" data-value="-">-</button>
+
+      <!-- Row 4 -->
+      <button class="btn btn-error" id="clear">C</button>
+      <button class="btn btn-secondary" data-value="0">0</button>
+      <button class="btn btn-success" id="equal">=</button>
+      <button class="btn btn-accent" data-value="+">+</button>
+    </div>
+  </div>
+
+ <script src="app.js"></script>
+</body>
+</html>
